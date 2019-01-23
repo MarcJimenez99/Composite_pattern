@@ -16,3 +16,5 @@ class Rand : public Base {
 			to_string(value); 
 		}
 };
+
+#endif

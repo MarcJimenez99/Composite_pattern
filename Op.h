@@ -22,3 +22,5 @@ class Op : public Base {
 		}
 
 };
+
+#endif
