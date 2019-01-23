@@ -1,11 +1,11 @@
 #include "base.h"
-#include "Pow.h"
-#include "Mult.h"
-#include "Div.h"
-#include "Add.h"
-#include "Sub.h"
-#include "Rand.h"
-#include "Op.h"
+#include "Pow.cpp"
+#include "Mult.cpp"
+#include "Div.cpp"
+#include "Add.cpp"
+#include "Sub.cpp"
+#include "Rand.cpp"
+#include "Op.cpp"
 
 using namespace std; 
 
