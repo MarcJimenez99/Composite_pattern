@@ -7,7 +7,7 @@ class Rand : public Base {
 		double value = 0;
 	public:
 		Rand() {
-			value = rand() % 100; 
+			value = static_cast<double>(rand() % 100); 
 		}
 		double evaluate () {
 			return value;

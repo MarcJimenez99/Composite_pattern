@@ -9,6 +9,9 @@ class Op : public Base {
 		double value = 0;
 	public:
 		Op(int num) {
+			value = static_cast<double>(num);
+		}
+		Op(double num) {
 			value = num;
 		}
 		double evaluate() {
