@@ -1,11 +1,11 @@
-#ifndef DIV_H
-#define DIV_H 
+#ifndef DIV_CPP
+#define DIV_CPP
 
 #include "base.h"
-#include "Op.h"
-#include "Rand.h"
-#include "Pow.h"
-#include "Mult.h"
+#include "Op.cpp"
+#include "Rand.cpp"
+#include "Pow.cpp"
+#include "Mult.cpp"
 
 class Div : public Base { 
 

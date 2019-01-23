@@ -1,13 +1,13 @@
-#ifndef SUB_H
-#define SUB_H
+#ifndef SUB_CPP
+#define SUB_CPP
 
 #include "base.h"
-#include "Op.h"
-#include "Rand.h"
-#include "Pow.h"
-#include "Mult.h"
-#include "Div.h"
-#include "Add.h"
+#include "Op.cpp"
+#include "Rand.cpp"
+#include "Pow.cpp"
+#include "Mult.cpp"
+#include "Div.cpp"
+#include "Add.cpp"
 
 class Sub : public Base {
 
