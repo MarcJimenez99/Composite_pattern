@@ -7,6 +7,8 @@
 #include "Rand.h"
 #include "Op.h"
 
+using namespace std; 
+
 int main() {
 	
 	Op* Op1 = new Op(2);
