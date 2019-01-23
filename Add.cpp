@@ -1,5 +1,5 @@
-#ifndef ADD_CPP
-#define ADD_CPP
+#ifndef ADD_H
+#define ADD_H
 
 #include "base.h"
 #include "Op.cpp"

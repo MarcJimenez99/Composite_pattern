@@ -1,5 +1,5 @@
-#ifndef DIV_CPP
-#define DIV_CPP
+#ifndef DIV_H
+#define DIV_H
 
 #include "base.h"
 #include "Op.cpp"
