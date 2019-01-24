@@ -6,7 +6,8 @@
 #include "Sub.cpp"
 #include "Rand.cpp"
 #include "Op.cpp"
-
+#include <iostream>
+#include <string>
 using namespace std; 
 
 int main() {
