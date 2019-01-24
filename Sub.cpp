@@ -19,7 +19,10 @@ class Sub : public Base {
 			left = v1;
 			right = v2;
 		}
-		double evaluate() {
+		double evaluate () {
+			return left->evaluate() * right->evaluate();
+		}
+		string stringify() {
 			string sent;
 			sent = to_string(left->evaluate()) + "-" + to_string(right->evaluate());
 			return sent;
