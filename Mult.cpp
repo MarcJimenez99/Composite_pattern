@@ -5,6 +5,10 @@
 #include "Op.cpp"
 #include "Rand.cpp"
 #include "Pow.cpp"
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 class Mult : public Base {
 
@@ -12,13 +16,15 @@ class Mult : public Base {
 		Base* left;
 		Base* right;
 	public:
-		Mult() { }
-		Mult(Op var1, Op var2) { }
+		Mult(Base* v1, Base* v2) {
+			left = v1;
+			right = v2;
+		}
 		double evaluate() {
-			return ((left->evaluate()) * (right->evalute()));
+			return ((left->evaluate()) * (right->evaluate()));
 		}
 		string stringify() {
-			string sent = to_string(left->evaluate) + " * " + to_string(right->evaluate);
+			string sent = to_string(left->evaluate()) + " * " + to_string(right->evaluate());
 			return sent;
 		}  
 
