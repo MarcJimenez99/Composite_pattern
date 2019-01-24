@@ -24,10 +24,18 @@ TEST(CompositeTest, OpEvaluateDouble) {
 
 TEST(CompositeTest, OpEvaluateNegative) {
 	Op* Op1 = new Op(-1); 
-	EXPECT_EQ(-1, Op1->evaluate());
+	EXPECT_EQ(-1.0, Op1->evaluate());
 } 
 
-//TEST(CompositeTest, Op  
+TEST(CompositeTest, OpStringifyInt) {
+	Op* Op1 = new Op(1);
+	EXPECT_EQ("1.000000", Op1->stringify());
+} 
+
+TEST(CompositeTest, OpStringifyDouble) {
+	Op* Op1 = new Op(1.0);
+	EXPECT_EQ("1.000000", Op1->stringify());
+}
 int main(int argc, char**argv) {
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();
