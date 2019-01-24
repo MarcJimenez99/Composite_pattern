@@ -18,7 +18,7 @@ class Op : public Base {
 			return value; 
 		}
 		string stringify() {
-			to_string(value);
+			return to_string(value);
 		}
 
 };
