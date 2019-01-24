@@ -2,9 +2,9 @@
 #define MULT_H
 
 #include "base.h"
-#include "Op.h"
-#include "Rand.h"
-#include "Pow.h"
+#include "Op.cpp"
+#include "Rand.cpp"
+#include "Pow.cpp"
 
 class Mult : public Base {
 
