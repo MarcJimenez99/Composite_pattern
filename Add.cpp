@@ -18,7 +18,7 @@ class Add : public Base {
 		right = v2;
 	}
 	double evaluate() {
-		return left->evaluate() * right->evaluate();
+		return left->evaluate() + right->evaluate();
 	}
 	string stringify(){
 		string sent;
