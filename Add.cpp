@@ -23,6 +23,7 @@ class Add : public Base {
 	string stringify(){
 		string sent;
 		sent = to_string(left->evaluate()) + " + " + to_string(right->evaluate());
+		return sent;
 	}
 };
 
