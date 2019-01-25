@@ -93,6 +93,14 @@ TEST(CompositeTest, MultStringify) {
         Mult* Mult1 = new Mult(x, y);
 	EXPECT_EQ("2.000000 * 2.000000", Mult1->stringify()); 
 }
+TEST(CompositeTest, MultPowOpEvaluate) {
+	Op* Op1 = new Op(2.0);
+	Op* Op2 = new Op(2.0);
+	Pow* Pow1 = new Pow(Op1, Op1); 
+	Op* Op3 = new Op(2.0);
+	Mult* Mult1 = new Mult(Pow1, Op3);
+	EXPECT_EQ(8.0, Mult1->evaluate()); 
+}
 int main(int argc, char**argv) {
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();
