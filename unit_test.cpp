@@ -60,11 +60,37 @@ TEST(CompositeTest, PowDoubleOpEvaluate) {
 	EXPECT_EQ(4.0, Pow1->evaluate()); 
 }
 
-TEST(CompositeTest, PowDoubleRandEvaluate) {
+TEST(CompositeTest, PowRandOpEvaluate) {
 	RandMock* x = new RandMock();
 	Op* y = new Op(2.0);
 	Pow* Pow1 = new Pow(x, y); 
 	EXPECT_EQ(4.0, Pow1->evaluate());
+}
+
+TEST(CompositeTest, PowDoubleRandEvaluate) {
+	RandMock* x = new RandMock();
+	RandMock* y = new RandMock();
+	Pow* Pow1 = new Pow(x, y);
+	EXPECT_EQ(4.0, Pow1->evaluate()); 
+}
+
+TEST(CompositeTest, PowDoublOpStringify) {
+	Op* x = new Op(2.0);
+        Op* y = new Op(2.0);
+        Pow* Pow1 = new Pow(x, y);     
+	EXPECT_EQ("2.000000^2.000000", Pow1->stringify());
+}
+TEST(CompositeTest, PowRandOpStringify) {
+	RandMock* x = new RandMock();
+        Op* y = new Op(2.0);
+        Pow* Pow1 = new Pow(x, y);
+        EXPECT_EQ("2.000000^2.000000", Pow1->stringify());
+}
+TEST(CompositeTest, PowDoubleRandStringify) {
+	RandMock* x = new RandMock();
+        RandMock* y = new RandMock();
+        Pow* Pow1 = new Pow(x, y);
+        EXPECT_EQ("2.000000^2.000000", Pow1->stringify());
 }
 int main(int argc, char**argv) {
 	::testing::InitGoogleTest(&argc, argv);
